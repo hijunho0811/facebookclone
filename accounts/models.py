@@ -11,7 +11,7 @@ def user_path(instance, filename):
     arr = [choice(string.ascii_letters) for _ in range(8)]
     pid = ''.join(arr)
     extension = filename.split('.')[-1]
-    return 'accounts/{}/{}.{}.format(instance.user.name, pid, extension)'
+    return 'accounts/{}/{}.{}'.format(instance.user.username, pid, extension)
 
 
 
